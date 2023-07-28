@@ -1,7 +1,7 @@
 package main
 
 import (
-	"net/http"
+	"echo_user_register/users"
 
 	"github.com/labstack/echo/v4"
 )
@@ -9,11 +9,7 @@ import (
 func main() {
 	e := echo.New()
 
-	e.GET("/", hello)
+	e.GET("/", users.Hello)
 
 	e.Logger.Fatal(e.Start(":1323"))
-}
-
-func hello(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello World")
 }
