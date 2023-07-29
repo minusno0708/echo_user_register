@@ -1,7 +1,7 @@
 package main
 
 import (
-	"echo_user_register/users"
+	"user_register/users"
 
 	"github.com/labstack/echo/v4"
 )

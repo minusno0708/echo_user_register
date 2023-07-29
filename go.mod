@@ -1,4 +1,4 @@
-module echo_user_register
+module user_register
 
 go 1.20
 
